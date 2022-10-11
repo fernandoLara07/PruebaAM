@@ -1,0 +1,40 @@
+  $mainPurple:#6B63B5;
+
+  .modalbutton_container{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-evenly ;
+  align-items: center;
+  width: 50%;
+  height: 2.5rem;
+  background-color:  $mainPurple;
+  .Iconspan{
+    color:  white ;
+    background-color: $mainPurple;
+  }
+  button{
+    width: 60%;
+    background-color:$mainPurple;
+    border: none;
+    color: white;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  
+}
+
+.BottomLeft{
+  border-Bottom-left-radius: 15px;
+}
+.TopLeft{
+  border-top-left-radius: 15px;
+}
+.BottomRight{
+  border-Bottom-Right-radius: 15px;
+  
+}
+.TopRight{
+  border-top-Right-radius: 15px;
+}

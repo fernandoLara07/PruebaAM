@@ -1,0 +1,19 @@
+.characteritem_container{
+  display: flex;
+  width: 80%;
+  border-radius: 30px;
+
+}
+
+
+
+@media only screen and (max-width: 950px) {
+  .characteritem_container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border-radius: 30px;
+    
+  }
+  
+}

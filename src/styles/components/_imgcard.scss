@@ -1,0 +1,89 @@
+//colors
+$Gryffindor: #ff0000, #fed482;
+$Slytherin: #1c792b, #82e95e;
+$Hufflepuff: #0597b7, #66d1ff;
+$Ravenclaw: #ffc700, #fff388;
+
+@mixin gradient($direction, $list) {
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);
+}
+
+.imgcard_container {
+  display: flex;
+  align-self:stretch;
+  justify-content: center;
+  min-height:100%; 
+  width: 35%;
+  border-top-left-radius: 15px;
+  border-Bottom-left-radius: 15px;
+  .container{
+    display: flex;
+    align-self:center;
+    justify-content: center;
+  }
+  img{
+    display: inline-block;
+    width: 9rem;
+    height: 10rem;
+    background-position: 50% 50%;
+    background-size: auto;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+}
+
+.Gryffindor {
+  @include gradient(135deg, $Gryffindor);
+}
+.Slytherin {
+  @include gradient(135deg, $Slytherin);
+}
+.Hufflepuff {
+  @include gradient(135deg, $Hufflepuff);
+}
+.Ravenclaw {
+  @include gradient(135deg, $Ravenclaw);
+}
+
+
+@media only screen and (max-width: 1230px) {
+  .imgcard_container {
+    img{
+      width: 5rem;
+      height: 6rem;
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    .imgcard_container {
+      display: flex;
+      align-self:stretch;
+      justify-content: center;
+      min-height:100%; 
+      width: 100%;
+      border-top-left-radius: 15px;
+      border-top-Right-radius: 15px;
+      border-Bottom-left-radius: 0px;
+      .container{
+        display: flex;
+        align-self:center;
+        justify-content: center;
+      }
+      img{
+        display: inline-block;
+        width: 5rem;
+        height: 6rem;
+        background-position: 50% 50%;
+        background-size: auto;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    
+    }
+    
+  }
+  
+}

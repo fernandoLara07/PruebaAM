@@ -1,0 +1,93 @@
+@font-face {
+  font-family: HarryPotter;
+  src: url('../assets/fonts/Harry.ttf');
+}
+
+body{
+  background: url("../assets/img/HowardsBG.png"), black;
+  background-position: 0 0;
+  background-size: contain;
+  background-repeat: no-repeat; 
+}
+.howardsApp{
+  display: flex;
+  flex-direction: column;
+  .nav{
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .navrow{
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 17.5rem;
+  }
+  .titles{
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+    p{
+      padding: 0;
+      margin: 1rem;
+      width: 30%;
+      text-align: center;
+    }
+    .pageTitle{
+      font-family: HarryPotter;
+      color: white;
+      font-size: 4rem;
+    }
+    .InstructionTitle{
+      color: white;
+      font-size: 2.5rem;
+      font-family: 'Open Sans';
+    }
+  }
+  .buttons{
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .row{
+    width: 65%;display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+}
+
+
+@media only screen and (max-width: 950px) {
+  .howardsApp{
+    background:black;
+    .nav{
+      height: 8rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .navrow{
+      height: 8rem;
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+      align-items: flex-end;
+      width: 25rem;
+    }
+    .titles{
+      p{
+        padding: 0;
+        margin: 1rem;
+        width: 70%;
+        text-align: center;
+      }
+    }
+  }
+  
+}

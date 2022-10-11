@@ -1,0 +1,24 @@
+$mainPurple: #6B63B5;
+$hover: rgba(107, 99, 181, .6);
+$normal: rgba(0, 0, 0, .6)
+;
+
+.filterbutton_container{
+  button{
+    border: 3px $mainPurple solid;
+    background-color: $normal;
+    font-family: 'Open Sans';
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 280px;
+    height: 67px;
+    &:hover{
+      background-color: $hover;
+    }
+    &:active{
+      background-color: $mainPurple;
+    }
+  }
+ 
+}

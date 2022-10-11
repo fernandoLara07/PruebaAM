@@ -1,0 +1,32 @@
+.favicon_container{
+  display: flex;
+  align-items: flex-start;
+  width: 5%;
+  justify-content: flex-end;
+  border-top-Right-radius: 15px;
+  border-Bottom-Right-radius: 15px;
+  background-color: white;
+  span{
+    padding: 25%;
+    font-size: 2rem;
+    color:#999999;
+    height: 1rem;
+    &:hover{
+      color:black;
+    }&:active{
+      color:#999999;
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 950px) {
+  .favicon_container{
+    span{
+      padding: 5%;
+      font-size: 1.5rem;
+
+    }
+  }
+  
+}
